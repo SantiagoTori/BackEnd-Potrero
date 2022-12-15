@@ -39,25 +39,24 @@ for ($i=1; $i<=100 ; $i=$i+2) {
 <hr>
 <h3>Ejercicio 5</h3>
 <?php
-$i=1;
-$suma=1;
-do {
-  $total= $i+$suma;
-  print "<p>$i+$suma=$total</p>\n";
-  $i++;
-} while ($i < 20);
+$suma=0;
+for ($i=1; $i <= 20 ; $i++) {
+  $suma += $i;
+}
+print "<p>La suma de los números del 1 al 20 es $suma.</p>\n";
  ?>
 
 <hr>
 <h3>Ejercicio 6</h3>
 <?php
-$i=0;
-$suma=2;
-do {
-  $total= $i+$suma;
-  print "<p>$i+$suma=$total</p>\n";
-  $i=$i+2;
-} while ($i <= 20);
+$suma=0;
+for ($i=1; $i <= 20; $i++) {
+  while ($i%2==0) {
+    $suma += $i;
+    $i++;
+  }
+}
+print "<p>La suma de los números pares del 1 al 20 es $suma.</p>\n";
  ?>
 
  <hr>
